@@ -1,0 +1,182 @@
+:root{
+    box-sizing: border-box;
+}
+
+*{
+    font-family: Outfit;
+    color: white;
+}
+body{
+    background-color: #29282e;
+}
+header{
+    justify-content: space-between;
+}
+header, .inbio, .menu, .categories, .cart{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.presentation{
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    gap: 10vh;
+    box-shadow: 0px 5px 5px -4px black;
+    border-radius: 2%;
+    margin: 6vh 4vh 6vh 4vh;
+    padding-bottom: 3vh;
+}
+.presentation_core{
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    padding: 2vh;
+}
+.presentation_core_social{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: flex-end;
+}
+.cart, .categories{
+    align-items: center;
+}
+.inbio{
+    align-items: center;
+    padding-left: 2vh;
+}
+.presentation_photo{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.presentation_photo>img{
+    width: clamp(50px, 100%, 500px);
+}
+.presentation_core_text>p{
+    font-size: 0.75em;
+    letter-spacing: 0.2em;
+}
+.social_icons>i{
+    padding: 1vh;
+    box-shadow: -7px -7px 5px rgba(51, 51, 51, 0.5);
+}.social_skill>.social_icons>i{
+    color: rgb(253, 44, 89);
+}
+.inbio>img{
+    width: clamp(25px, 4vh, 250px);
+}
+.cart>img{
+    width: clamp(25px, 1vh, 250px);
+}
+.cart>p{
+    box-shadow: inset 3px 3px 3px black,
+                inset -3px -3px 3px black,
+                3px 3px 3px black,
+                -3px -3px 3px black,
+                3px -3px 3px black,
+                -3px 3px 3px black;
+    padding: 5px;
+}
+.inbio>p, .categories>p, .cart>p{
+    margin: 0 1vh 0 1vh;
+    font-size: 0.55em;
+}
+.inbio>p{
+    font-weight: 700;
+    letter-spacing: 15%;
+}
+.cart>img{
+    border-radius: 100%;
+}
+
+
+
+.whatido{
+    margin: 12vh 4vh 12vh 4vh;
+}
+.whatido_card{
+    padding: 4vh;
+    background-image: linear-gradient(to bottom right, #17161a, #2e2e35);
+}
+.whatido_card>i{
+    color: rgb(253, 44, 89);
+    font-size: clamp(10px, 3vh, 250px);
+}
+.whatido>h2{
+    padding-bottom: 3vh;
+}
+.whatido>p{
+    margin-bottom: 0;
+}
+
+
+.whatido_section, .myportfolio_section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3vh 2vh;
+}
+.whatido_card, .myportfolio_card{
+    box-shadow: -4px -4px 5px #484752,
+                4px 4px 5px #141316;
+    border-radius: 2%;
+}
+
+
+.myportfolio{
+    display: flex;
+    flex-direction: column;
+    margin: 4vh;
+    align-items: center;
+}
+.myportfolio_card{
+    padding: 1.5vh;
+    background-image: linear-gradient(to bottom right, #17161a, #2e2e35);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.myportfolio_card_like{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: fit-content;
+}
+.like{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.myportfolio_card>img{
+    width: clamp(50px, 100%, 500px);
+    border-radius: 2%;
+}
+.myportfolio>h2{
+    padding-bottom: 3vh;
+}
+.myportfolio>p{
+    font-size: 0.85em;
+    margin: 0;
+}
+.myportfolio_card>h3{
+    margin: 0;
+}
+.like>p{
+    margin: 0.6vh;
+}
+
+
+/**/
+
+
+
+span{
+    color: rgb(253, 44, 89);
+}
+h2{
+    font-weight: 700;
+    font-size: 3em;
+    margin: 0;
+}
+
