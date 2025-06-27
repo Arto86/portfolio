@@ -180,3 +180,52 @@ h2{
     margin: 0;
 }
 
+
+
+@media only screen and (max-width: 600px){
+    header{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    header{
+        grid-template-columns: 1fr 2fr;
+    }
+    .inbio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2vh 0vh;
+    }
+    .categories{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 2vh;
+        padding-bottom: 3vh;
+    }
+    .cart>*{
+        padding: 0 3vh 0 3vh;
+    }
+    .presentation{
+        grid-template-rows: 2fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    .presentation_photo{
+        display: flex;
+        flex-direction: column;
+    }
+    .whatido_section{
+        grid-template-columns: 1fr;
+    }
+    .myportfolio_section{
+        grid-template-columns: 1fr;
+    }
+}
